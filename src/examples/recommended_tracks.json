@@ -1,0 +1,907 @@
+{
+    "tracks": [
+      {
+        "album": {
+          "album_type": "SINGLE",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/5CCwRZC6euC8Odo6y9X8jr"
+              },
+              "href": "https://api.spotify.com/v1/artists/5CCwRZC6euC8Odo6y9X8jr",
+              "id": "5CCwRZC6euC8Odo6y9X8jr",
+              "name": "Rita Ora",
+              "type": "artist",
+              "uri": "spotify:artist:5CCwRZC6euC8Odo6y9X8jr"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/1Cs0zKBU1kc0i8ypK3B9ai"
+              },
+              "href": "https://api.spotify.com/v1/artists/1Cs0zKBU1kc0i8ypK3B9ai",
+              "id": "1Cs0zKBU1kc0i8ypK3B9ai",
+              "name": "David Guetta",
+              "type": "artist",
+              "uri": "spotify:artist:1Cs0zKBU1kc0i8ypK3B9ai"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/5rGrDvrLOV2VV8SCFVGWlj"
+              },
+              "href": "https://api.spotify.com/v1/artists/5rGrDvrLOV2VV8SCFVGWlj",
+              "id": "5rGrDvrLOV2VV8SCFVGWlj",
+              "name": "Imanbek",
+              "type": "artist",
+              "uri": "spotify:artist:5rGrDvrLOV2VV8SCFVGWlj"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/4oAJhbdsokVDoLHMdbqtDP"
+          },
+          "href": "https://api.spotify.com/v1/albums/4oAJhbdsokVDoLHMdbqtDP",
+          "id": "4oAJhbdsokVDoLHMdbqtDP",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273675cdd705fa6d88a86b73175",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02675cdd705fa6d88a86b73175",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851675cdd705fa6d88a86b73175",
+              "width": 64
+            }
+          ],
+          "name": "Big (feat. Gunna)",
+          "release_date": "2021-02-11",
+          "release_date_precision": "day",
+          "total_tracks": 1,
+          "type": "album",
+          "uri": "spotify:album:4oAJhbdsokVDoLHMdbqtDP"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5CCwRZC6euC8Odo6y9X8jr"
+            },
+            "href": "https://api.spotify.com/v1/artists/5CCwRZC6euC8Odo6y9X8jr",
+            "id": "5CCwRZC6euC8Odo6y9X8jr",
+            "name": "Rita Ora",
+            "type": "artist",
+            "uri": "spotify:artist:5CCwRZC6euC8Odo6y9X8jr"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/1Cs0zKBU1kc0i8ypK3B9ai"
+            },
+            "href": "https://api.spotify.com/v1/artists/1Cs0zKBU1kc0i8ypK3B9ai",
+            "id": "1Cs0zKBU1kc0i8ypK3B9ai",
+            "name": "David Guetta",
+            "type": "artist",
+            "uri": "spotify:artist:1Cs0zKBU1kc0i8ypK3B9ai"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/5rGrDvrLOV2VV8SCFVGWlj"
+            },
+            "href": "https://api.spotify.com/v1/artists/5rGrDvrLOV2VV8SCFVGWlj",
+            "id": "5rGrDvrLOV2VV8SCFVGWlj",
+            "name": "Imanbek",
+            "type": "artist",
+            "uri": "spotify:artist:5rGrDvrLOV2VV8SCFVGWlj"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/2hlmm7s2ICUX0LVIhVFlZQ"
+            },
+            "href": "https://api.spotify.com/v1/artists/2hlmm7s2ICUX0LVIhVFlZQ",
+            "id": "2hlmm7s2ICUX0LVIhVFlZQ",
+            "name": "Gunna",
+            "type": "artist",
+            "uri": "spotify:artist:2hlmm7s2ICUX0LVIhVFlZQ"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 156781,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "GBAHS2100008"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/78oZ26xvmtCfarveRXs3dq"
+        },
+        "href": "https://api.spotify.com/v1/tracks/78oZ26xvmtCfarveRXs3dq",
+        "id": "78oZ26xvmtCfarveRXs3dq",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Big (feat. Gunna)",
+        "popularity": 69,
+        "preview_url": "https://p.scdn.co/mp3-preview/c920f5fa5704775312763254277458c88ac3e2b7?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 1,
+        "type": "track",
+        "uri": "spotify:track:78oZ26xvmtCfarveRXs3dq"
+      },
+      {
+        "album": {
+          "album_type": "SINGLE",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/7ahuvq1mbb4idwG1iJbSFG"
+              },
+              "href": "https://api.spotify.com/v1/artists/7ahuvq1mbb4idwG1iJbSFG",
+              "id": "7ahuvq1mbb4idwG1iJbSFG",
+              "name": "Cassadee Pope",
+              "type": "artist",
+              "uri": "spotify:artist:7ahuvq1mbb4idwG1iJbSFG"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/6h3XvFssN6IhrbmEjTev7h"
+          },
+          "href": "https://api.spotify.com/v1/albums/6h3XvFssN6IhrbmEjTev7h",
+          "id": "6h3XvFssN6IhrbmEjTev7h",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2736976b8d20c840a70dac29a72",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e026976b8d20c840a70dac29a72",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048516976b8d20c840a70dac29a72",
+              "width": 64
+            }
+          ],
+          "name": "One More Red Light",
+          "release_date": "2018-08-10",
+          "release_date_precision": "day",
+          "total_tracks": 1,
+          "type": "album",
+          "uri": "spotify:album:6h3XvFssN6IhrbmEjTev7h"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/7ahuvq1mbb4idwG1iJbSFG"
+            },
+            "href": "https://api.spotify.com/v1/artists/7ahuvq1mbb4idwG1iJbSFG",
+            "id": "7ahuvq1mbb4idwG1iJbSFG",
+            "name": "Cassadee Pope",
+            "type": "artist",
+            "uri": "spotify:artist:7ahuvq1mbb4idwG1iJbSFG"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 210264,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "QM24S1827283"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/30jUFpRq1l7QPytEAoX1m8"
+        },
+        "href": "https://api.spotify.com/v1/tracks/30jUFpRq1l7QPytEAoX1m8",
+        "id": "30jUFpRq1l7QPytEAoX1m8",
+        "is_local": false,
+        "is_playable": true,
+        "name": "One More Red Light",
+        "popularity": 31,
+        "preview_url": "https://p.scdn.co/mp3-preview/85412287d67bbfd34fd03b086e753e4e0101e74f?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 1,
+        "type": "track",
+        "uri": "spotify:track:30jUFpRq1l7QPytEAoX1m8"
+      },
+      {
+        "album": {
+          "album_type": "ALBUM",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/56x8mYvS3cyDGAi8N2FxbB"
+              },
+              "href": "https://api.spotify.com/v1/artists/56x8mYvS3cyDGAi8N2FxbB",
+              "id": "56x8mYvS3cyDGAi8N2FxbB",
+              "name": "Randy Houser",
+              "type": "artist",
+              "uri": "spotify:artist:56x8mYvS3cyDGAi8N2FxbB"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/6JbaZX1WluHFINcw5P3cq2"
+          },
+          "href": "https://api.spotify.com/v1/albums/6JbaZX1WluHFINcw5P3cq2",
+          "id": "6JbaZX1WluHFINcw5P3cq2",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b27358679265f24df1e51c32fb1c",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e0258679265f24df1e51c32fb1c",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d0000485158679265f24df1e51c32fb1c",
+              "width": 64
+            }
+          ],
+          "name": "Fired Up",
+          "release_date": "2016-03-11",
+          "release_date_precision": "day",
+          "total_tracks": 17,
+          "type": "album",
+          "uri": "spotify:album:6JbaZX1WluHFINcw5P3cq2"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/56x8mYvS3cyDGAi8N2FxbB"
+            },
+            "href": "https://api.spotify.com/v1/artists/56x8mYvS3cyDGAi8N2FxbB",
+            "id": "56x8mYvS3cyDGAi8N2FxbB",
+            "name": "Randy Houser",
+            "type": "artist",
+            "uri": "spotify:artist:56x8mYvS3cyDGAi8N2FxbB"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 179360,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "US58E1500508"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/7JnorPtXApoUw2AuJUGLY1"
+        },
+        "href": "https://api.spotify.com/v1/tracks/7JnorPtXApoUw2AuJUGLY1",
+        "id": "7JnorPtXApoUw2AuJUGLY1",
+        "is_local": false,
+        "is_playable": true,
+        "name": "We Went",
+        "popularity": 56,
+        "preview_url": "https://p.scdn.co/mp3-preview/be512d8490170816cd678707a8f39cec339c5e42?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 2,
+        "type": "track",
+        "uri": "spotify:track:7JnorPtXApoUw2AuJUGLY1"
+      },
+      {
+        "album": {
+          "album_type": "ALBUM",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/7vCtweS8UVAXTyau2j0rDT"
+              },
+              "href": "https://api.spotify.com/v1/artists/7vCtweS8UVAXTyau2j0rDT",
+              "id": "7vCtweS8UVAXTyau2j0rDT",
+              "name": "Josh Turner",
+              "type": "artist",
+              "uri": "spotify:artist:7vCtweS8UVAXTyau2j0rDT"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/4VRIpRxvAMvewEHzy2GCtc"
+          },
+          "href": "https://api.spotify.com/v1/albums/4VRIpRxvAMvewEHzy2GCtc",
+          "id": "4VRIpRxvAMvewEHzy2GCtc",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273facea103c5c5532cd4a30b10",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02facea103c5c5532cd4a30b10",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851facea103c5c5532cd4a30b10",
+              "width": 64
+            }
+          ],
+          "name": "Deep South",
+          "release_date": "2017-03-10",
+          "release_date_precision": "day",
+          "total_tracks": 11,
+          "type": "album",
+          "uri": "spotify:album:4VRIpRxvAMvewEHzy2GCtc"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/7vCtweS8UVAXTyau2j0rDT"
+            },
+            "href": "https://api.spotify.com/v1/artists/7vCtweS8UVAXTyau2j0rDT",
+            "id": "7vCtweS8UVAXTyau2j0rDT",
+            "name": "Josh Turner",
+            "type": "artist",
+            "uri": "spotify:artist:7vCtweS8UVAXTyau2j0rDT"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 209760,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "USUM71700348"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/3g5IVCUGoWESgJ7mb2kXmM"
+        },
+        "href": "https://api.spotify.com/v1/tracks/3g5IVCUGoWESgJ7mb2kXmM",
+        "id": "3g5IVCUGoWESgJ7mb2kXmM",
+        "is_local": false,
+        "is_playable": true,
+        "name": "All About You",
+        "popularity": 41,
+        "preview_url": null,
+        "track_number": 2,
+        "type": "track",
+        "uri": "spotify:track:3g5IVCUGoWESgJ7mb2kXmM"
+      },
+      {
+        "album": {
+          "album_type": "ALBUM",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/0wnYgCeP013HkKoOyC5V32"
+              },
+              "href": "https://api.spotify.com/v1/artists/0wnYgCeP013HkKoOyC5V32",
+              "id": "0wnYgCeP013HkKoOyC5V32",
+              "name": "Allie X",
+              "type": "artist",
+              "uri": "spotify:artist:0wnYgCeP013HkKoOyC5V32"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/2vRvnMqmqw8DUpUEVEynXt"
+          },
+          "href": "https://api.spotify.com/v1/albums/2vRvnMqmqw8DUpUEVEynXt",
+          "id": "2vRvnMqmqw8DUpUEVEynXt",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273f7641d247238167c945cc547",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02f7641d247238167c945cc547",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851f7641d247238167c945cc547",
+              "width": 64
+            }
+          ],
+          "name": "Collxtion I",
+          "release_date": "2015-12-04",
+          "release_date_precision": "day",
+          "total_tracks": 8,
+          "type": "album",
+          "uri": "spotify:album:2vRvnMqmqw8DUpUEVEynXt"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/0wnYgCeP013HkKoOyC5V32"
+            },
+            "href": "https://api.spotify.com/v1/artists/0wnYgCeP013HkKoOyC5V32",
+            "id": "0wnYgCeP013HkKoOyC5V32",
+            "name": "Allie X",
+            "type": "artist",
+            "uri": "spotify:artist:0wnYgCeP013HkKoOyC5V32"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 207301,
+        "explicit": true,
+        "external_ids": {
+          "isrc": "CA8OU1500007"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/1CVQ8euBNROz7KDPeNqwWE"
+        },
+        "href": "https://api.spotify.com/v1/tracks/1CVQ8euBNROz7KDPeNqwWE",
+        "id": "1CVQ8euBNROz7KDPeNqwWE",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Bitch",
+        "popularity": 63,
+        "preview_url": "https://p.scdn.co/mp3-preview/d33357712c3afcac13a3b28dce92987494c3742f?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 5,
+        "type": "track",
+        "uri": "spotify:track:1CVQ8euBNROz7KDPeNqwWE"
+      },
+      {
+        "album": {
+          "album_type": "SINGLE",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/1Zz6NBe8UIZjm88TvehFtx"
+              },
+              "href": "https://api.spotify.com/v1/artists/1Zz6NBe8UIZjm88TvehFtx",
+              "id": "1Zz6NBe8UIZjm88TvehFtx",
+              "name": "Le Youth",
+              "type": "artist",
+              "uri": "spotify:artist:1Zz6NBe8UIZjm88TvehFtx"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/1rOch2rJkCzdRUdGql31Hv"
+          },
+          "href": "https://api.spotify.com/v1/albums/1rOch2rJkCzdRUdGql31Hv",
+          "id": "1rOch2rJkCzdRUdGql31Hv",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273f444fdcc34a810a9373be19c",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02f444fdcc34a810a9373be19c",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851f444fdcc34a810a9373be19c",
+              "width": 64
+            }
+          ],
+          "name": "C O O L",
+          "release_date": "2013-06-28",
+          "release_date_precision": "day",
+          "total_tracks": 4,
+          "type": "album",
+          "uri": "spotify:album:1rOch2rJkCzdRUdGql31Hv"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/1Zz6NBe8UIZjm88TvehFtx"
+            },
+            "href": "https://api.spotify.com/v1/artists/1Zz6NBe8UIZjm88TvehFtx",
+            "id": "1Zz6NBe8UIZjm88TvehFtx",
+            "name": "Le Youth",
+            "type": "artist",
+            "uri": "spotify:artist:1Zz6NBe8UIZjm88TvehFtx"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 214346,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "GBARL1300152"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/4L0HMiE70JyFSfOsnoHGbj"
+        },
+        "href": "https://api.spotify.com/v1/tracks/4L0HMiE70JyFSfOsnoHGbj",
+        "id": "4L0HMiE70JyFSfOsnoHGbj",
+        "is_local": false,
+        "is_playable": true,
+        "name": "C O O L - Radio Edit",
+        "popularity": 54,
+        "preview_url": "https://p.scdn.co/mp3-preview/49e70f48c693f0671616ad61d647d5c22a2b9a34?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 1,
+        "type": "track",
+        "uri": "spotify:track:4L0HMiE70JyFSfOsnoHGbj"
+      },
+      {
+        "album": {
+          "album_type": "ALBUM",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/75nC6MXUalYZSOd7OfNkwq"
+              },
+              "href": "https://api.spotify.com/v1/artists/75nC6MXUalYZSOd7OfNkwq",
+              "id": "75nC6MXUalYZSOd7OfNkwq",
+              "name": "Tensnake",
+              "type": "artist",
+              "uri": "spotify:artist:75nC6MXUalYZSOd7OfNkwq"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/6lp3jWrAdZwPwkwih20qzX"
+          },
+          "href": "https://api.spotify.com/v1/albums/6lp3jWrAdZwPwkwih20qzX",
+          "id": "6lp3jWrAdZwPwkwih20qzX",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b27369e2c05ada5d3b738fd0de6f",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e0269e2c05ada5d3b738fd0de6f",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d0000485169e2c05ada5d3b738fd0de6f",
+              "width": 64
+            }
+          ],
+          "name": "Glow",
+          "release_date": "2014-01-01",
+          "release_date_precision": "day",
+          "total_tracks": 16,
+          "type": "album",
+          "uri": "spotify:album:6lp3jWrAdZwPwkwih20qzX"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/75nC6MXUalYZSOd7OfNkwq"
+            },
+            "href": "https://api.spotify.com/v1/artists/75nC6MXUalYZSOd7OfNkwq",
+            "id": "75nC6MXUalYZSOd7OfNkwq",
+            "name": "Tensnake",
+            "type": "artist",
+            "uri": "spotify:artist:75nC6MXUalYZSOd7OfNkwq"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/2r7POU2f5jV6x3k4vsNwrM"
+            },
+            "href": "https://api.spotify.com/v1/artists/2r7POU2f5jV6x3k4vsNwrM",
+            "id": "2r7POU2f5jV6x3k4vsNwrM",
+            "name": "Fiora",
+            "type": "artist",
+            "uri": "spotify:artist:2r7POU2f5jV6x3k4vsNwrM"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 268003,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "GBUM71304673"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/4usMyvux4Z71nAnGzuub0k"
+        },
+        "href": "https://api.spotify.com/v1/tracks/4usMyvux4Z71nAnGzuub0k",
+        "id": "4usMyvux4Z71nAnGzuub0k",
+        "is_local": false,
+        "is_playable": true,
+        "name": "See Right Through",
+        "popularity": 44,
+        "preview_url": null,
+        "track_number": 12,
+        "type": "track",
+        "uri": "spotify:track:4usMyvux4Z71nAnGzuub0k"
+      },
+      {
+        "album": {
+          "album_type": "ALBUM",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/2Aoyn1J7INkcUzoWzyP8yB"
+              },
+              "href": "https://api.spotify.com/v1/artists/2Aoyn1J7INkcUzoWzyP8yB",
+              "id": "2Aoyn1J7INkcUzoWzyP8yB",
+              "name": "John Luther Adams",
+              "type": "artist",
+              "uri": "spotify:artist:2Aoyn1J7INkcUzoWzyP8yB"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/3urhmIFYrTLwEDgb6LyqCD"
+              },
+              "href": "https://api.spotify.com/v1/artists/3urhmIFYrTLwEDgb6LyqCD",
+              "id": "3urhmIFYrTLwEDgb6LyqCD",
+              "name": "Oberlin Contemporary Music Ensemble",
+              "type": "artist",
+              "uri": "spotify:artist:3urhmIFYrTLwEDgb6LyqCD"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/4kveoUptAWfYWEzHT9BK0a"
+              },
+              "href": "https://api.spotify.com/v1/artists/4kveoUptAWfYWEzHT9BK0a",
+              "id": "4kveoUptAWfYWEzHT9BK0a",
+              "name": "Tim Weiss",
+              "type": "artist",
+              "uri": "spotify:artist:4kveoUptAWfYWEzHT9BK0a"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/5cI76ytLpOmAXDY53YtvLC"
+          },
+          "href": "https://api.spotify.com/v1/albums/5cI76ytLpOmAXDY53YtvLC",
+          "id": "5cI76ytLpOmAXDY53YtvLC",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b2731dde37c8ef82795b7ffa1a5e",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e021dde37c8ef82795b7ffa1a5e",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d000048511dde37c8ef82795b7ffa1a5e",
+              "width": 64
+            }
+          ],
+          "name": "John Luther Adams: In the White Silence",
+          "release_date": "2003-01-01",
+          "release_date_precision": "day",
+          "total_tracks": 19,
+          "type": "album",
+          "uri": "spotify:album:5cI76ytLpOmAXDY53YtvLC"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/2Aoyn1J7INkcUzoWzyP8yB"
+            },
+            "href": "https://api.spotify.com/v1/artists/2Aoyn1J7INkcUzoWzyP8yB",
+            "id": "2Aoyn1J7INkcUzoWzyP8yB",
+            "name": "John Luther Adams",
+            "type": "artist",
+            "uri": "spotify:artist:2Aoyn1J7INkcUzoWzyP8yB"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3urhmIFYrTLwEDgb6LyqCD"
+            },
+            "href": "https://api.spotify.com/v1/artists/3urhmIFYrTLwEDgb6LyqCD",
+            "id": "3urhmIFYrTLwEDgb6LyqCD",
+            "name": "Oberlin Contemporary Music Ensemble",
+            "type": "artist",
+            "uri": "spotify:artist:3urhmIFYrTLwEDgb6LyqCD"
+          },
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4kveoUptAWfYWEzHT9BK0a"
+            },
+            "href": "https://api.spotify.com/v1/artists/4kveoUptAWfYWEzHT9BK0a",
+            "id": "4kveoUptAWfYWEzHT9BK0a",
+            "name": "Tim Weiss",
+            "type": "artist",
+            "uri": "spotify:artist:4kveoUptAWfYWEzHT9BK0a"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 223546,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "US4QP0460002"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/2cl3STzwTmCH93choV3TCl"
+        },
+        "href": "https://api.spotify.com/v1/tracks/2cl3STzwTmCH93choV3TCl",
+        "id": "2cl3STzwTmCH93choV3TCl",
+        "is_local": false,
+        "is_playable": true,
+        "name": "In The White Silence: Letter B",
+        "popularity": 12,
+        "preview_url": "https://p.scdn.co/mp3-preview/6f6cfd935c50462f22fbe3b1e1d18b9864772709?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 2,
+        "type": "track",
+        "uri": "spotify:track:2cl3STzwTmCH93choV3TCl"
+      },
+      {
+        "album": {
+          "album_type": "ALBUM",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/3IpQziA6YwD53PQ5xbwgLF"
+              },
+              "href": "https://api.spotify.com/v1/artists/3IpQziA6YwD53PQ5xbwgLF",
+              "id": "3IpQziA6YwD53PQ5xbwgLF",
+              "name": "Jóhann Jóhannsson",
+              "type": "artist",
+              "uri": "spotify:artist:3IpQziA6YwD53PQ5xbwgLF"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/5MdxtYNgZJiZMegeZ3Qe1U"
+          },
+          "href": "https://api.spotify.com/v1/albums/5MdxtYNgZJiZMegeZ3Qe1U",
+          "id": "5MdxtYNgZJiZMegeZ3Qe1U",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b27315311fdd887df0d1b6732af5",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e0215311fdd887df0d1b6732af5",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d0000485115311fdd887df0d1b6732af5",
+              "width": 64
+            }
+          ],
+          "name": "Prisoners (Original Motion Picture Soundtrack)",
+          "release_date": "2013-09-17",
+          "release_date_precision": "day",
+          "total_tracks": 16,
+          "type": "album",
+          "uri": "spotify:album:5MdxtYNgZJiZMegeZ3Qe1U"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/3IpQziA6YwD53PQ5xbwgLF"
+            },
+            "href": "https://api.spotify.com/v1/artists/3IpQziA6YwD53PQ5xbwgLF",
+            "id": "3IpQziA6YwD53PQ5xbwgLF",
+            "name": "Jóhann Jóhannsson",
+            "type": "artist",
+            "uri": "spotify:artist:3IpQziA6YwD53PQ5xbwgLF"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 310680,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "USNLR1300587"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/109AftOEye10Xdhotqc2bN"
+        },
+        "href": "https://api.spotify.com/v1/tracks/109AftOEye10Xdhotqc2bN",
+        "id": "109AftOEye10Xdhotqc2bN",
+        "is_local": false,
+        "is_playable": true,
+        "linked_from": {
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/2dVMQ0MWkOspUA2pLNaag2"
+          },
+          "href": "https://api.spotify.com/v1/tracks/2dVMQ0MWkOspUA2pLNaag2",
+          "id": "2dVMQ0MWkOspUA2pLNaag2",
+          "type": "track",
+          "uri": "spotify:track:2dVMQ0MWkOspUA2pLNaag2"
+        },
+        "name": "The Candlelight Vigil",
+        "popularity": 35,
+        "preview_url": "https://p.scdn.co/mp3-preview/c90d1bb584f628db0e26a8437803db0d90f0ca44?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 5,
+        "type": "track",
+        "uri": "spotify:track:109AftOEye10Xdhotqc2bN"
+      },
+      {
+        "album": {
+          "album_type": "ALBUM",
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/4YrKBkKSVeqDamzBPWVnSJ"
+              },
+              "href": "https://api.spotify.com/v1/artists/4YrKBkKSVeqDamzBPWVnSJ",
+              "id": "4YrKBkKSVeqDamzBPWVnSJ",
+              "name": "Basement Jaxx",
+              "type": "artist",
+              "uri": "spotify:artist:4YrKBkKSVeqDamzBPWVnSJ"
+            }
+          ],
+          "external_urls": {
+            "spotify": "https://open.spotify.com/album/1fuDdObQ1ncWsOEUjKIQxv"
+          },
+          "href": "https://api.spotify.com/v1/albums/1fuDdObQ1ncWsOEUjKIQxv",
+          "id": "1fuDdObQ1ncWsOEUjKIQxv",
+          "images": [
+            {
+              "height": 640,
+              "url": "https://i.scdn.co/image/ab67616d0000b273af0303d2f6c6283569718c21",
+              "width": 640
+            },
+            {
+              "height": 300,
+              "url": "https://i.scdn.co/image/ab67616d00001e02af0303d2f6c6283569718c21",
+              "width": 300
+            },
+            {
+              "height": 64,
+              "url": "https://i.scdn.co/image/ab67616d00004851af0303d2f6c6283569718c21",
+              "width": 64
+            }
+          ],
+          "name": "Junto (Special Edition)",
+          "release_date": "2014-08-25",
+          "release_date_precision": "day",
+          "total_tracks": 26,
+          "type": "album",
+          "uri": "spotify:album:1fuDdObQ1ncWsOEUjKIQxv"
+        },
+        "artists": [
+          {
+            "external_urls": {
+              "spotify": "https://open.spotify.com/artist/4YrKBkKSVeqDamzBPWVnSJ"
+            },
+            "href": "https://api.spotify.com/v1/artists/4YrKBkKSVeqDamzBPWVnSJ",
+            "id": "4YrKBkKSVeqDamzBPWVnSJ",
+            "name": "Basement Jaxx",
+            "type": "artist",
+            "uri": "spotify:artist:4YrKBkKSVeqDamzBPWVnSJ"
+          }
+        ],
+        "disc_number": 1,
+        "duration_ms": 263053,
+        "explicit": false,
+        "external_ids": {
+          "isrc": "GBPVV1400877"
+        },
+        "external_urls": {
+          "spotify": "https://open.spotify.com/track/42suZFjDtBbl9sESKm4oj2"
+        },
+        "href": "https://api.spotify.com/v1/tracks/42suZFjDtBbl9sESKm4oj2",
+        "id": "42suZFjDtBbl9sESKm4oj2",
+        "is_local": false,
+        "is_playable": true,
+        "name": "Never Say Never - Extended Mix",
+        "popularity": 42,
+        "preview_url": "https://p.scdn.co/mp3-preview/ee0ff03825bfd3867f612770e65ac7aa05ee7b58?cid=774b29d4f13844c495f206cafdad9c86",
+        "track_number": 4,
+        "type": "track",
+        "uri": "spotify:track:42suZFjDtBbl9sESKm4oj2"
+      }
+    ],
+    "seeds": [
+      {
+        "initialPoolSize": 257,
+        "afterFilteringSize": 257,
+        "afterRelinkingSize": 257,
+        "id": "4NHQUGzhtTLFvgF5SZesLK",
+        "type": "ARTIST",
+        "href": "https://api.spotify.com/v1/artists/4NHQUGzhtTLFvgF5SZesLK"
+      },
+      {
+        "initialPoolSize": 307,
+        "afterFilteringSize": 307,
+        "afterRelinkingSize": 307,
+        "id": "0c6xIDDpzE81m2q797ordA",
+        "type": "TRACK",
+        "href": "https://api.spotify.com/v1/tracks/0c6xIDDpzE81m2q797ordA"
+      },
+      {
+        "initialPoolSize": 402,
+        "afterFilteringSize": 402,
+        "afterRelinkingSize": 402,
+        "id": "classical",
+        "type": "GENRE",
+        "href": null
+      },
+      {
+        "initialPoolSize": 390,
+        "afterFilteringSize": 390,
+        "afterRelinkingSize": 390,
+        "id": "country",
+        "type": "GENRE",
+        "href": null
+      }
+    ]
+  }

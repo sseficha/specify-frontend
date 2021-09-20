@@ -1,0 +1,381 @@
+{
+  "items": [
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/6l3HvQ5sa6mXTsMTB19rO5"
+      },
+      "followers": {
+        "href": null,
+        "total": 14356298
+      },
+      "genres": [
+        "conscious hip hop",
+        "hip hop",
+        "north carolina hip hop",
+        "rap"
+      ],
+      "href": "https://api.spotify.com/v1/artists/6l3HvQ5sa6mXTsMTB19rO5",
+      "id": "6l3HvQ5sa6mXTsMTB19rO5",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5ebadd503b411a712e277895c8a",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174add503b411a712e277895c8a",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178add503b411a712e277895c8a",
+          "width": 160
+        }
+      ],
+      "name": "J. Cole",
+      "popularity": 87,
+      "type": "artist",
+      "uri": "spotify:artist:6l3HvQ5sa6mXTsMTB19rO5"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/1UdbiTrv73Dp7F0s3OHmn2"
+      },
+      "followers": {
+        "href": null,
+        "total": 314128
+      },
+      "genres": [
+        "greek hip hop",
+        "greek trap"
+      ],
+      "href": "https://api.spotify.com/v1/artists/1UdbiTrv73Dp7F0s3OHmn2",
+      "id": "1UdbiTrv73Dp7F0s3OHmn2",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb850bf02a72fb878773ea4ba7",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174850bf02a72fb878773ea4ba7",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178850bf02a72fb878773ea4ba7",
+          "width": 160
+        }
+      ],
+      "name": "Light",
+      "popularity": 63,
+      "type": "artist",
+      "uri": "spotify:artist:1UdbiTrv73Dp7F0s3OHmn2"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/6ZGwdAmu91r8mpA6SXodzd"
+      },
+      "followers": {
+        "href": null,
+        "total": 177635
+      },
+      "genres": [
+        "greek pop",
+        "laiko"
+      ],
+      "href": "https://api.spotify.com/v1/artists/6ZGwdAmu91r8mpA6SXodzd",
+      "id": "6ZGwdAmu91r8mpA6SXodzd",
+      "images": [
+        {
+          "height": 1000,
+          "url": "https://i.scdn.co/image/2df723c86a4a2f589e4c71b313f9d32cdda91160",
+          "width": 1000
+        },
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/353e73330e28f4a6dcec41ceaceca0f812c961eb",
+          "width": 640
+        },
+        {
+          "height": 200,
+          "url": "https://i.scdn.co/image/98798a1a050bb5167ee07c605bda92698cc61190",
+          "width": 200
+        },
+        {
+          "height": 64,
+          "url": "https://i.scdn.co/image/05a61dee707027f44ba1c4500d32ee3a7deec091",
+          "width": 64
+        }
+      ],
+      "name": "Giorgos Sabanis",
+      "popularity": 50,
+      "type": "artist",
+      "uri": "spotify:artist:6ZGwdAmu91r8mpA6SXodzd"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/57kVlVXJYheaFNXA91qP4w"
+      },
+      "followers": {
+        "href": null,
+        "total": 39664
+      },
+      "genres": [
+        "trap soul"
+      ],
+      "href": "https://api.spotify.com/v1/artists/57kVlVXJYheaFNXA91qP4w",
+      "id": "57kVlVXJYheaFNXA91qP4w",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb3a9857046bc6bad462024f85",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab676161000051743a9857046bc6bad462024f85",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f1783a9857046bc6bad462024f85",
+          "width": 160
+        }
+      ],
+      "name": "Prznt",
+      "popularity": 49,
+      "type": "artist",
+      "uri": "spotify:artist:57kVlVXJYheaFNXA91qP4w"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/0epOFNiUfyON9EYx7Tpr6V"
+      },
+      "followers": {
+        "href": null,
+        "total": 3932296
+      },
+      "genres": [
+        "alternative rock",
+        "garage rock",
+        "modern rock",
+        "permanent wave",
+        "rock"
+      ],
+      "href": "https://api.spotify.com/v1/artists/0epOFNiUfyON9EYx7Tpr6V",
+      "id": "0epOFNiUfyON9EYx7Tpr6V",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb64d74f5985cb66b2f7b60e93",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab6761610000517464d74f5985cb66b2f7b60e93",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f17864d74f5985cb66b2f7b60e93",
+          "width": 160
+        }
+      ],
+      "name": "The Strokes",
+      "popularity": 77,
+      "type": "artist",
+      "uri": "spotify:artist:0epOFNiUfyON9EYx7Tpr6V"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/0lAWpj5szCSwM4rUMHYmrr"
+      },
+      "followers": {
+        "href": null,
+        "total": 3842672
+      },
+      "genres": [
+        "indie rock italiano",
+        "italian pop"
+      ],
+      "href": "https://api.spotify.com/v1/artists/0lAWpj5szCSwM4rUMHYmrr",
+      "id": "0lAWpj5szCSwM4rUMHYmrr",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5ebaea7b760a35b75df65f94a0c",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174aea7b760a35b75df65f94a0c",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178aea7b760a35b75df65f94a0c",
+          "width": 160
+        }
+      ],
+      "name": "Måneskin",
+      "popularity": 89,
+      "type": "artist",
+      "uri": "spotify:artist:0lAWpj5szCSwM4rUMHYmrr"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/1LxWE4LOhnqeaAx2tVUK6p"
+      },
+      "followers": {
+        "href": null,
+        "total": 95838
+      },
+      "genres": [
+        "greek hip hop",
+        "greek pop",
+        "greek trap"
+      ],
+      "href": "https://api.spotify.com/v1/artists/1LxWE4LOhnqeaAx2tVUK6p",
+      "id": "1LxWE4LOhnqeaAx2tVUK6p",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5ebc8887716c77a1324d213b4bb",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174c8887716c77a1324d213b4bb",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178c8887716c77a1324d213b4bb",
+          "width": 160
+        }
+      ],
+      "name": "Saske",
+      "popularity": 57,
+      "type": "artist",
+      "uri": "spotify:artist:1LxWE4LOhnqeaAx2tVUK6p"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/2bTXCQgBuhqdm0MAmgMnfE"
+      },
+      "followers": {
+        "href": null,
+        "total": 8364
+      },
+      "genres": [],
+      "href": "https://api.spotify.com/v1/artists/2bTXCQgBuhqdm0MAmgMnfE",
+      "id": "2bTXCQgBuhqdm0MAmgMnfE",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb3499d0e08f33102980789a4e",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab676161000051743499d0e08f33102980789a4e",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f1783499d0e08f33102980789a4e",
+          "width": 160
+        }
+      ],
+      "name": "Xatzifrageta",
+      "popularity": 41,
+      "type": "artist",
+      "uri": "spotify:artist:2bTXCQgBuhqdm0MAmgMnfE"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/3M4ThdJR28z9eSMcQHAZ5G"
+      },
+      "followers": {
+        "href": null,
+        "total": 688743
+      },
+      "genres": [
+        "garage rock",
+        "modern rock",
+        "rock",
+        "scottish rock"
+      ],
+      "href": "https://api.spotify.com/v1/artists/3M4ThdJR28z9eSMcQHAZ5G",
+      "id": "3M4ThdJR28z9eSMcQHAZ5G",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5ebd693efe23dcda7b9595e77ec",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174d693efe23dcda7b9595e77ec",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178d693efe23dcda7b9595e77ec",
+          "width": 160
+        }
+      ],
+      "name": "The Fratellis",
+      "popularity": 62,
+      "type": "artist",
+      "uri": "spotify:artist:3M4ThdJR28z9eSMcQHAZ5G"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/6XyY86QOPPrYVGvF9ch6wz"
+      },
+      "followers": {
+        "href": null,
+        "total": 19883501
+      },
+      "genres": [
+        "alternative metal",
+        "nu metal",
+        "post-grunge",
+        "rap metal"
+      ],
+      "href": "https://api.spotify.com/v1/artists/6XyY86QOPPrYVGvF9ch6wz",
+      "id": "6XyY86QOPPrYVGvF9ch6wz",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb34e5aa6afc1ba147bfbb0677",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab6761610000517434e5aa6afc1ba147bfbb0677",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f17834e5aa6afc1ba147bfbb0677",
+          "width": 160
+        }
+      ],
+      "name": "Linkin Park",
+      "popularity": 84,
+      "type": "artist",
+      "uri": "spotify:artist:6XyY86QOPPrYVGvF9ch6wz"
+    }
+  ],
+  "total": 50,
+  "limit": 10,
+  "offset": 5,
+  "previous": null,
+  "href": "https://api.spotify.com/v1/me/top/artists?limit=10&offset=5",
+  "next": "https://api.spotify.com/v1/me/top/artists?limit=10&offset=15"
+}
