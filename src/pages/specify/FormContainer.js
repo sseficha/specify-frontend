@@ -2,10 +2,10 @@ import ChartContainerGrid from "./ChartContainerGrid";
 import { useState, useEffect } from "react";
 import SubmissionOverview from "./SubmissionOverview";
 import TopSelectionContainer from "./TopSelectionContainer";
-import audioFeatures from "../examples/audio_features.json";
-import topTracks from "../examples/top_tracks.json";
-import topArtists from "../examples/top_artists.json";
-import genres from "../examples/genres.json";
+import audioFeatures from "../../examples/audio_features.json";
+import topTracks from "../../examples/top_tracks.json";
+import topArtists from "../../examples/top_artists.json";
+import genres from "../../examples/genres.json";
 
 function FormContainer() {
   let originalAudioFeatures = audioFeatures.audio_features; //result of api call for audio features of tracks

@@ -1,6 +1,6 @@
 import ChartContainer from "./ChartContainer";
-import audioFeatures from "../examples/audio_features.json";
-import exampleAudioFeaturesGroup from "../examples/audio_features_group_example.json";
+import audioFeatures from "../../examples/audio_features.json";
+import exampleAudioFeaturesGroup from "../../examples/audio_features_group_example.json";
 
 import { useState, useEffect } from "react";
 

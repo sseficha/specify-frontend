@@ -1,4 +1,4 @@
-import recommendedTracks from "../examples/recommended_tracks.json";
+import recommendedTracks from "../../examples/recommended_tracks.json";
 
 function RecommendationContainer() {
   return (
