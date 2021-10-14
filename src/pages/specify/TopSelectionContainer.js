@@ -1,9 +1,16 @@
 import { AuthContext } from "../../context/AuthContext";
 import { useEffect, useContext, useState } from "react";
+import "../../style/selection.scss";
+import useHttpHook from "../../hooks/useHttpHook";
 
 function TopSelectionContainer({ type, setSelectedSeed }) {
   const [options, setOptions] = useState([]);
-  let { token } = useContext(AuthContext);
+  let { accessToken } = useContext(AuthContext);
+  const { sendRequest, error, clearError } = useHttpHook();
+
+  // useEffect(() => {
+  //   console.log("TopSelection Container got rendered");
+  // });
 
   useEffect(() => {
     let endpoint;
@@ -22,25 +29,16 @@ function TopSelectionContainer({ type, setSelectedSeed }) {
     }
     const fetchData = async () => {
       try {
-        let response = await fetch(
-          `http://localhost:5000/spotify_api/${endpoint}`,
-          {
-            headers: {
-              Authorization: `Bearer ${token}`,
-            },
-          }
-        );
-        if (!response.ok) {
-          let responseData = await response.json();
-          throw new Error(responseData.message);
-        } else {
-          let responseData = await response.json();
-          responseData = Object.values(responseData)[0];
-          console.log(responseData);
-          setOptions(responseData);
-          //genres: responseData.genres
-          //topTracks: responseData.map(element=>element.name)
-        }
+        let responseData = await sendRequest({
+          url: `${process.env.REACT_APP_SPOTIFY_API_URL}/${endpoint}`,
+
+          headers: {
+            Authorization: `Bearer ${accessToken}`,
+          },
+        });
+
+        responseData = Object.values(responseData)[0];
+        setOptions(responseData);
       } catch (error) {
         console.log(error);
       }
@@ -48,14 +46,16 @@ function TopSelectionContainer({ type, setSelectedSeed }) {
     fetchData();
   }, []);
   return (
-    <div class="row">
-      <div class="col-4 offset-4">
+    <div class="row justify-content-center" style={{ marginTop: "5px" }}>
+      <div class="col-12 col-sm-8">
         <select
-          class="form-select"
+          class="form-select form-select-md bg-dark text-white"
           aria-label="Default select example"
           onChange={(e) => setSelectedSeed(e.target.value)}
         >
-          <option selected>Open this {type} select menu</option>
+          <option disabled selected>
+            Open this {type} select menu
+          </option>
           {options.map((option) =>
             type == "artists" || type == "tracks" ? (
               <option key={option.id} value={option.id}>

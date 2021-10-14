@@ -1,14 +1,12 @@
 import ChartContainerGrid from "./ChartContainerGrid";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import SubmissionOverview from "./SubmissionOverview";
 import TopSelectionContainer from "./TopSelectionContainer";
-import audioFeatures from "../../examples/audio_features.json";
-import topTracks from "../../examples/top_tracks.json";
-import topArtists from "../../examples/top_artists.json";
-import genres from "../../examples/genres.json";
+import { AuthContext } from "../../context/AuthContext";
+import useHttpHook from "../../hooks/useHttpHook";
 
-function FormContainer() {
-  let originalAudioFeatures = audioFeatures.audio_features; //result of api call for audio features of tracks
+function FormContainer({ setRecommendations }) {
+  const { sendRequest, error, clearError } = useHttpHook();
 
   const [optionalParams, setOptionalParams] = useState({
     danceability: {
@@ -23,16 +21,52 @@ function FormContainer() {
       min: 0,
       max: 1,
     },
+    instrumentalness: {
+      min: 0,
+      max: 1,
+    },
   });
 
-  const [selectedTrackSeed, setSelectedTrackSeed] = useState("");
-  const [selectedArtistSeed, setSelectedArtistSeed] = useState("");
-  const [selectedGenreSeed, setSelectedGenreSeed] = useState("");
+  const [selectedTrackSeed, setSelectedTrackSeed] = useState(null);
+  const [selectedArtistSeed, setSelectedArtistSeed] = useState(null);
+  const [selectedGenreSeed, setSelectedGenreSeed] = useState(null);
 
+  const { accessToken } = useContext(AuthContext);
   //filtered audio features of tracks based on slider values
   const [filteredAudioFeatures, setFilteredAudioFeatures] = useState(
-    originalAudioFeatures
+    // originalAudioFeatures
+    []
   );
+
+  const handleSubmit = () => {
+    // if (!(selectedTrackSeed && selectedArtistSeed && selectedGenreSeed)) {
+    //   alert("Track, message and artist fields are mandatory");
+    // } else {
+    let payload = {
+      ...optionalParams,
+      trackSeed: selectedTrackSeed,
+      artistSeed: selectedArtistSeed,
+      genreSeed: selectedGenreSeed,
+    };
+    const fetchRecommendations = async () => {
+      try {
+        const responseData = await sendRequest({
+          url: `${process.env.REACT_APP_SPOTIFY_API_URL}/recommendations`,
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${accessToken}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(payload),
+        });
+        setRecommendations(responseData.tracks);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fetchRecommendations();
+    // }
+  };
 
   return (
     <>
@@ -46,21 +80,28 @@ function FormContainer() {
       {/* artistis tracks and genres */}
       <TopSelectionContainer
         type="tracks"
-        options={topTracks.items}
         setSelectedSeed={setSelectedTrackSeed}
       />
       <TopSelectionContainer
         type="artists"
-        options={topArtists.items}
         setSelectedSeed={setSelectedArtistSeed}
       />
       <TopSelectionContainer
         type="genres"
-        options={genres.genres}
         setSelectedSeed={setSelectedGenreSeed}
       />
 
-      <SubmissionOverview optionalParams={optionalParams} />
+      {/* <SubmissionOverview optionalParams={optionalParams} /> */}
+      <div class="row" style={{ marginTop: "5px" }}>
+        <div class="col-12">
+          <input
+            class="btn btn-primary"
+            type="submit"
+            value="Submit"
+            onClick={handleSubmit}
+          ></input>
+        </div>
+      </div>
     </>
   );
 }

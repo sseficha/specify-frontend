@@ -1,7 +1,11 @@
 import { createContext } from "react";
 
 export const AuthContext = createContext({
-  token: null,
+  accessToken: null,
+  refreshToken: null,
+  tokenExpirationDate: null,
   login: () => {},
   logout: () => {},
+  playerConfig: null,
+  setPlayerConfig: () => {},
 });

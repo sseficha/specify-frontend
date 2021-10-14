@@ -1,8 +1,10 @@
 import ChartContainer from "./ChartContainer";
-import audioFeatures from "../../examples/audio_features.json";
-import exampleAudioFeaturesGroup from "../../examples/audio_features_group_example.json";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext, useMemo } from "react";
+import { AuthContext } from "../../context/AuthContext";
+import useGroupAudioFeatures from "../../hooks/audioFeatures/useGroupAudioFeatures";
+import useFilterAudioFeatures from "../../hooks/audioFeatures/useFilterAudioFeatures";
+import useFetchAudioFeatures from "../../hooks/audioFeatures/useFetchAudioFeatures";
 
 function ChartContainerGrid({
   optionalParams,
@@ -10,42 +12,34 @@ function ChartContainerGrid({
   filteredAudioFeatures,
   setFilteredAudioFeatures,
 }) {
-  let originalAudioFeatures = audioFeatures.audio_features; //result of api call for audio features of tracks
+  let { accessToken } = useContext(AuthContext);
+  // const [tracks, setTracks] = useState([]); //this can be with useMemo and useCallback instead of useEffect
+  // const [originalAudioFeatures, setOriginalAudioFeatures] = useState([]); //this can be with useMemo and useCallback instead of useEffect
 
-  //sum of filtered audio features of tracks grouped in buckets of 10
-  const [filteredGroupAudioFeatures, setFilteredGroupAudioFeatures] = useState(
-    exampleAudioFeaturesGroup
+  // useEffect(() => {
+  //   console.log("CHART CONTAINER GRID GOT RENDERED");
+  // });
+
+  const filteredGroupAudioFeatures = useGroupAudioFeatures(
+    optionalParams,
+    filteredAudioFeatures
   );
 
-  useEffect(() => {
-    const features = Object.keys(optionalParams);
-    let temp = JSON.parse(JSON.stringify(exampleAudioFeaturesGroup)); // THIS HAS TO BE INITIALISED CORRECTLY!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-    filteredAudioFeatures.forEach((element) => {
-      features.forEach((feature) => {
-        let value = element[feature];
-        if (value != 0 && value != 1)
-          temp[feature][Math.floor(value / 0.1)]["sum"] += 1;
-      });
-    });
-    setFilteredGroupAudioFeatures(temp);
-  }, [filteredAudioFeatures]);
+  const originalAudioFeatures = useFetchAudioFeatures(
+    setFilteredAudioFeatures,
+    accessToken
+  );
 
-  useEffect(() => {
-    setFilteredAudioFeatures(
-      originalAudioFeatures.filter(
-        (element) =>
-          element.danceability >= optionalParams.danceability.min &&
-          element.danceability <= optionalParams.danceability.max &&
-          element.energy >= optionalParams.energy.min &&
-          element.energy <= optionalParams.energy.max
-      )
-    );
-  }, [optionalParams]);
+  useFilterAudioFeatures(
+    setFilteredAudioFeatures,
+    originalAudioFeatures,
+    optionalParams
+  );
 
   return (
     <div class="row">
       {Object.keys(optionalParams).map((option) => (
-        <div class="col-sm-12 col-md-6" style={{ height: "200px" }}>
+        <div class="col-sm-12 col-md-6">
           <ChartContainer
             key={option}
             title={option}

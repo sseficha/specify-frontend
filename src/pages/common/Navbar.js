@@ -1,8 +1,12 @@
-import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../context/AuthContext";
 
 function Navbar() {
+  const { logout } = useContext(AuthContext);
   return (
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    // <nav class="navbar navbar-expand-sm navbar-dark bg-dark bg-gradient">
+    <nav class="navbar navbar-expand navbar-dark bg-dark bg-gradient">
       <button
         class="navbar-toggler"
         type="button"
@@ -14,14 +18,23 @@ function Navbar() {
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div
+        class="collapse navbar-collapse justify-content-between"
+        id="navbarNavAltMarkup"
+      >
         <div class="navbar-nav">
-          <a class="nav-item nav-link" href="/">
+          <Link to="/" class="nav-item nav-link">
             Home
-          </a>
-          <a class="nav-item nav-link" href="/specify">
+          </Link>
+
+          <Link to="/specify" class="nav-item nav-link">
             Specify
-          </a>
+          </Link>
+        </div>
+        <div class="navbar-nav">
+          <Link to="#" class="nav-item nav-link" onClick={logout}>
+            Logout
+          </Link>
         </div>
       </div>
     </nav>
