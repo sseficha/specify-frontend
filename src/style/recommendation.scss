@@ -1,0 +1,14 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+.active td {
+  background-color: rgb(25, 135, 84) !important;
+}
+
+.active:hover td {
+  background-color: rgb(25, 135, 84) !important;
+}
+
+tr:hover td {
+  background-color: $gray-700 !important;
+}

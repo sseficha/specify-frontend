@@ -1,80 +1,40 @@
 import { useEffect, useContext, useState } from "react";
-import { PlayerContext } from "../../context/PlayerContext";
-import { AuthContext } from "../../context/AuthContext";
 import Modal from "./Modal";
-import useHttpHook from "../../hooks/useHttpHook";
+import "../../style/recommendation.scss";
 function RecommendationContainer({ recommendations }) {
-  const { accessToken } = useContext(AuthContext);
+  const [currentSong, setCurrentSong] = useState();
+  const [isSelected, setIsSelected] = useState(false);
+  const [audio, setAudio] = useState();
 
-  // const [player, setPlayer] = useState(undefined);
-  // const [deviceId, setDeviceId] = useState(undefined);
-
-  const { playerConfig, setPlayerConfig } = useContext(PlayerContext);
-  const { sendRequest, error, clearError } = useHttpHook();
-
-  const play = ({
-    spotify_uri,
-    playerInstance: {
-      _options: { getOAuthToken },
-    },
-  }) => {
-    getOAuthToken((access_token) => {
-      fetch(
-        `https://api.spotify.com/v1/me/player/play?device_id=${playerConfig.deviceId}`,
-        {
-          method: "PUT",
-          body: JSON.stringify({ uris: [spotify_uri] }),
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Bearer ${access_token}`,
-          },
+  const handleClick = (uri, url) => {
+    if (url) {
+      if (currentSong != uri) {
+        setCurrentSong(uri);
+        setAudio(new Audio(url));
+        setIsSelected(true);
+      } else {
+        if (audio.paused) {
+          audio.play();
+          setIsSelected(true);
+        } else {
+          audio.pause();
+          setIsSelected(false);
         }
-      );
-    });
+      }
+    }
   };
 
   useEffect(() => {
-    let player;
-    if (!playerConfig) {
-      const script = document.createElement("script");
-      script.src = "https://sdk.scdn.co/spotify-player.js";
-      script.async = true;
-
-      document.body.appendChild(script);
-
-      window.onSpotifyWebPlaybackSDKReady = () => {
-        player = new window.Spotify.Player({
-          name: "Web Playback SDK",
-          getOAuthToken: (cb) => {
-            cb(accessToken);
-          },
-          volume: 0.5,
-        });
-
-        // setPlayer(player);
-
-        player.addListener("ready", ({ device_id }) => {
-          console.log("Ready with Device ID", device_id);
-          setPlayerConfig({ deviceId: device_id, player: player });
-
-          // setDeviceId(device_id);
-        });
-
-        player.addListener("not_ready", ({ device_id }) => {
-          console.log("Device ID has gone offline", device_id);
-        });
-
-        player.connect();
+    if (audio) {
+      audio.pause();
+      audio.addEventListener("canplay", (event) => {
+        audio.play();
+      });
+      return () => {
+        audio.pause();
       };
-    } else {
-      console.log("already have player config");
-      player = playerConfig.player;
-      player.connect();
     }
-    return function cleanup() {
-      player.disconnect();
-    };
-  }, []);
+  }, [audio]);
 
   return (
     <>
@@ -88,15 +48,7 @@ function RecommendationContainer({ recommendations }) {
           Create Playlist
         </button>
       </div>
-      <iframe
-        src="https://open.spotify.com/embed/track/1MLVUnu8S4DZIN9HtQNkDc"
-        width="100%"
-        height="80"
-        frameBorder="0"
-        allowfullscreen=""
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-      ></iframe>
-      <table class="table table-dark table-striped table-hover">
+      <table class="table table-dark">
         <thead>
           <tr>
             <th scope="col">Track</th>
@@ -107,12 +59,23 @@ function RecommendationContainer({ recommendations }) {
         <tbody>
           {recommendations.map((track) => (
             <tr
+              class={currentSong == track.uri && isSelected ? "active" : ""}
+              // class="active"
               key={track.uri}
-              onClick={() =>
-                play({
-                  playerInstance: playerConfig.player,
-                  spotify_uri: track.uri,
-                })
+              onClick={
+                () => {
+                  handleClick(track.uri, track.preview_url);
+
+                  // audio.addEventListener("canplay", (event) => {
+                  //   audio.play();
+                  // });
+                  // audio.play();
+                }
+                // play({
+                //   playerInstance: playerConfig.player,
+                //   spotify_uri: track.uri,
+
+                // })
               }
             >
               <td>{track.name}</td>
