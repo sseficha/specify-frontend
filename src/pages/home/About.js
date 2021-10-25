@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 
-function Home() {
+function About() {
   return (
     <>
-      <h1>Home</h1>
+      <h1>About page</h1>
       <Link to="/specify">Link to specify page</Link>
     </>
   );
 }
 
-export default Home;
+export default About;

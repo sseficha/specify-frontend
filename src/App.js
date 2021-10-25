@@ -1,6 +1,6 @@
 import "./App.css";
 import Specify from "./pages/specify/Specify";
-import Home from "./pages/home/Home";
+import Home from "./pages/home/About";
 import Navbar from "./pages/common/Navbar";
 import { BrowserRouter } from "react-router-dom";
 import { AuthContext } from "./context/AuthContext";
@@ -41,10 +41,16 @@ function App() {
             <Navbar />
             <div class="container-fluid text-white">
               <Switch>
-                <Route path="/specify">
+                {/* <Route path="/specify">
+                  <Specify />
+                </Route> */}
+                {/* <Route exact path="/">
+                  <Home />
+                </Route> */}
+                <Route exact path="/">
                   <Specify />
                 </Route>
-                <Route exact path="/">
+                <Route exact path="/about">
                   <Home />
                 </Route>
                 <Redirect to="/" />

@@ -24,11 +24,11 @@ function Navbar() {
       >
         <div class="navbar-nav">
           <Link to="/" class="nav-item nav-link">
-            Home
+            Specify
           </Link>
 
-          <Link to="/specify" class="nav-item nav-link">
-            Specify
+          <Link to="/about" class="nav-item nav-link">
+            About
           </Link>
         </div>
         <div class="navbar-nav">
