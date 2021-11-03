@@ -5,7 +5,7 @@ import RecommendationContainer from "./RecommendationContainer";
 import "../../style/specify.scss";
 
 function Specify() {
-  const [recommendations, setRecommendations] = useState([]);
+  const [recommendations, setRecommendations] = useState(null);
   return (
     <div class="container">
       <FormContainer setRecommendations={setRecommendations} />

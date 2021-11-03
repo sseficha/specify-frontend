@@ -1,4 +1,4 @@
-import { useEffect, useContext, useState } from "react";
+import { useEffect, useState } from "react";
 import Modal from "./Modal";
 import "../../style/recommendation.scss";
 function RecommendationContainer({ recommendations }) {
@@ -37,66 +37,63 @@ function RecommendationContainer({ recommendations }) {
   }, [audio]);
 
   return (
-    <>
-      <div class="d-flex flex-row justify-content-between align-items-center">
-        <h2>Recommendations</h2>
-        <button
-          class="btn btn-success btn-sm "
-          data-bs-toggle="modal"
-          data-bs-target="#exampleModal"
-        >
-          Create Playlist
-        </button>
-      </div>
-      <table class="table table-dark">
-        <thead>
-          <tr>
-            <th scope="col">Track</th>
-            <th scope="col">Artist</th>
-            <th scope="col">Album</th>
-          </tr>
-        </thead>
-        <tbody>
-          {recommendations.map((track) => (
-            <tr
-              class={currentSong == track.uri && isSelected ? "active" : ""}
-              // class="active"
-              key={track.uri}
-              onClick={
-                () => {
-                  handleClick(track.uri, track.preview_url);
-
-                  // audio.addEventListener("canplay", (event) => {
-                  //   audio.play();
-                  // });
-                  // audio.play();
-                }
-                // play({
-                //   playerInstance: playerConfig.player,
-                //   spotify_uri: track.uri,
-
-                // })
-              }
+    recommendations && (
+      <>
+        <div class="d-flex flex-row justify-content-between align-items-center">
+          <h2>Recommendations</h2>
+          {recommendations.length > 0 && (
+            <button
+              class="btn btn-success btn-sm "
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
             >
-              <td>{track.name}</td>
-              <td>
-                {track.artists.map((artist, index, array) =>
-                  index != array.length - 1 ? (
-                    <span>{artist.name + ", "}</span>
-                  ) : (
-                    <span>{artist.name}</span>
-                  )
-                )}
-              </td>
-              <td>{track.album.name}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-      <Modal
-        uris={recommendations.map((recommendation) => recommendation.uri)}
-      />
-    </>
+              Create Playlist
+            </button>
+          )}
+        </div>
+        {recommendations.length == 0 && (
+          <div>No songs available for selected filters</div>
+        )}
+
+        {recommendations.length > 0 && (
+          <table class="table table-dark">
+            <thead>
+              <tr>
+                <th scope="col">Track</th>
+                <th scope="col">Artist</th>
+                <th scope="col">Album</th>
+              </tr>
+            </thead>
+            <tbody>
+              {recommendations.map((track) => (
+                <tr
+                  class={currentSong == track.uri && isSelected ? "active" : ""}
+                  key={track.uri}
+                  onClick={() => {
+                    handleClick(track.uri, track.preview_url);
+                  }}
+                >
+                  <td>{track.name}</td>
+                  <td>
+                    {track.artists.map((artist, index, array) =>
+                      index != array.length - 1 ? (
+                        <span>{artist.name + ", "}</span>
+                      ) : (
+                        <span>{artist.name}</span>
+                      )
+                    )}
+                  </td>
+                  <td>{track.album.name}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        )}
+        <Modal
+          uris={recommendations.map((recommendation) => recommendation.uri)}
+        />
+      </>
+    )
   );
 }
 
