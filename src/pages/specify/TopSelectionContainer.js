@@ -3,7 +3,7 @@ import { useEffect, useContext, useState } from "react";
 import "../../style/selection.scss";
 import useHttpHook from "../../hooks/useHttpHook";
 
-function TopSelectionContainer({ type, setSelectedSeed }) {
+function TopSelectionContainer({ type, setSelectedSeeds, selectedSeeds }) {
   const [options, setOptions] = useState([]);
   let { accessToken } = useContext(AuthContext);
   const { sendRequest, error, clearError } = useHttpHook();
@@ -45,30 +45,54 @@ function TopSelectionContainer({ type, setSelectedSeed }) {
     };
     fetchData();
   }, []);
+
+  const handleClick = (checked, item) => {
+    // let seeds = selectedSeeds;
+    if (checked) {
+      setSelectedSeeds(selectedSeeds.concat([item]));
+    } else {
+      setSelectedSeeds(selectedSeeds.filter((val) => val != item));
+    }
+  };
+
   return (
-    <div class="row justify-content-center" style={{ marginTop: "5px" }}>
-      <div class="col-12 col-sm-8">
-        <select
-          class="form-select form-select-md bg-dark text-white"
-          aria-label="Default select example"
-          onChange={(e) => setSelectedSeed(e.target.value)}
-        >
-          <option disabled selected>
-            Open this {type} select menu
-          </option>
-          {options.map((option) =>
-            type == "artists" || type == "tracks" ? (
-              <option key={option.id} value={option.id}>
-                {option.name}
-              </option>
-            ) : (
-              <option key={option} value={option}>
-                {option}
-              </option>
-            )
-          )}
-        </select>
-      </div>
+    // <div class="row justify-content-center" style={{ marginTop: "5px" }}>
+    <div class="col-12 col-sm-4">
+      {/* <a
+        class="btn btn-dark w-100"
+        data-bs-toggle="collapse"
+        href={`#multiCollapseExample-${type}`}
+        role="button"
+        aria-expanded="false"
+        aria-controls={`multiCollapseExample-${type}`}
+      >
+        Toggle {type} element
+      </a> */}
+
+      {/* <div class="collapse multi-collapse " id={`multiCollapseExample-${type}`}> */}
+      <h5>{type} selection</h5>
+      <ul class="list-group ">
+        {options.map((option) => (
+          <li
+            class="list-group-item bg-dark text-white"
+            key={type == "artists" || type == "tracks" ? option.id : option}
+          >
+            <input
+              onChange={(e) =>
+                handleClick(
+                  e.target.checked,
+                  type == "artists" || type == "tracks" ? option.id : option
+                )
+              }
+              class="form-check-input me-1"
+              type="checkbox"
+              value=""
+              aria-label="..."
+            />
+            {type == "artists" || type == "tracks" ? option.name : option}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

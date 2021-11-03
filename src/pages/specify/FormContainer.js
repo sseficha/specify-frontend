@@ -27,9 +27,9 @@ function FormContainer({ setRecommendations }) {
     },
   });
 
-  const [selectedTrackSeed, setSelectedTrackSeed] = useState(null);
-  const [selectedArtistSeed, setSelectedArtistSeed] = useState(null);
-  const [selectedGenreSeed, setSelectedGenreSeed] = useState(null);
+  const [selectedTrackSeeds, setSelectedTrackSeeds] = useState([]);
+  const [selectedArtistSeeds, setSelectedArtistSeeds] = useState([]);
+  const [selectedGenreSeeds, setSelectedGenreSeeds] = useState([]);
 
   const { accessToken } = useContext(AuthContext);
   //filtered audio features of tracks based on slider values
@@ -42,30 +42,42 @@ function FormContainer({ setRecommendations }) {
     // if (!(selectedTrackSeed && selectedArtistSeed && selectedGenreSeed)) {
     //   alert("Track, message and artist fields are mandatory");
     // } else {
-    let payload = {
-      ...optionalParams,
-      trackSeed: selectedTrackSeed,
-      artistSeed: selectedArtistSeed,
-      genreSeed: selectedGenreSeed,
-    };
-    const fetchRecommendations = async () => {
-      try {
-        const responseData = await sendRequest({
-          url: `${process.env.REACT_APP_SPOTIFY_API_URL}/recommendations`,
-          method: "POST",
-          headers: {
-            Authorization: `Bearer ${accessToken}`,
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(payload),
-        });
-        setRecommendations(responseData.tracks);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-    fetchRecommendations();
-    // }
+    if (
+      (selectedTrackSeeds.length > 0 ||
+        selectedGenreSeeds.length > 0 ||
+        selectedArtistSeeds.length > 0) &&
+      selectedTrackSeeds.length +
+        selectedGenreSeeds.length +
+        selectedArtistSeeds.length <=
+        5
+    ) {
+      let payload = {
+        ...optionalParams,
+        trackSeeds: selectedTrackSeeds,
+        artistSeeds: selectedArtistSeeds,
+        genreSeeds: selectedGenreSeeds,
+      };
+      const fetchRecommendations = async () => {
+        try {
+          const responseData = await sendRequest({
+            url: `${process.env.REACT_APP_SPOTIFY_API_URL}/recommendations`,
+            method: "POST",
+            headers: {
+              Authorization: `Bearer ${accessToken}`,
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(payload),
+          });
+          setRecommendations(responseData.tracks);
+        } catch (error) {
+          console.log(error);
+        }
+      };
+      fetchRecommendations();
+      // }
+    } else {
+      alert("Combination of selections has to be at least 1 and at most 5");
+    }
   };
 
   return (
@@ -77,19 +89,24 @@ function FormContainer({ setRecommendations }) {
         setFilteredAudioFeatures={setFilteredAudioFeatures}
       />
 
-      {/* artistis tracks and genres */}
-      <TopSelectionContainer
-        type="tracks"
-        setSelectedSeed={setSelectedTrackSeed}
-      />
-      <TopSelectionContainer
-        type="artists"
-        setSelectedSeed={setSelectedArtistSeed}
-      />
-      <TopSelectionContainer
-        type="genres"
-        setSelectedSeed={setSelectedGenreSeed}
-      />
+      <div class="row justify-content-center" style={{ marginTop: "5px" }}>
+        {/* artistis tracks and genres */}
+        <TopSelectionContainer
+          type="tracks"
+          setSelectedSeeds={setSelectedTrackSeeds}
+          selectedSeeds={selectedTrackSeeds}
+        />
+        <TopSelectionContainer
+          type="artists"
+          setSelectedSeeds={setSelectedArtistSeeds}
+          selectedSeeds={selectedArtistSeeds}
+        />
+        <TopSelectionContainer
+          type="genres"
+          setSelectedSeeds={setSelectedGenreSeeds}
+          selectedSeeds={selectedGenreSeeds}
+        />
+      </div>
 
       {/* <SubmissionOverview optionalParams={optionalParams} /> */}
       <div class="row" style={{ marginTop: "5px" }}>
