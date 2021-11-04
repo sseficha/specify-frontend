@@ -4,7 +4,6 @@ import Home from "./pages/home/About";
 import Navbar from "./pages/common/Navbar";
 import { BrowserRouter } from "react-router-dom";
 import { AuthContext } from "./context/AuthContext";
-import { PlayerContext } from "./context/PlayerContext";
 import "./style/app.scss";
 
 import {
@@ -15,15 +14,12 @@ import {
 } from "react-router-dom";
 import Login from "./pages/login/Login";
 import useAuth from "./hooks/useAuth";
-import usePlayerConfig from "./hooks/usePlayerConfig";
 
 //DIV CLASS CONTAINER ON TOP
 
 function App() {
   const { accessToken, refreshToken, tokenExpirationDate, login, logout } =
     useAuth();
-
-  const { playerConfig, setPlayerConfig } = usePlayerConfig();
 
   return (
     <AuthContext.Provider
@@ -37,7 +33,7 @@ function App() {
     >
       <BrowserRouter style={{ minHeight: "100vh" }}>
         {accessToken ? (
-          <PlayerContext.Provider value={{ playerConfig, setPlayerConfig }}>
+          <>
             <Navbar />
             <div class="container-fluid text-white">
               <Switch>
@@ -56,7 +52,7 @@ function App() {
                 <Redirect to="/" />
               </Switch>
             </div>
-          </PlayerContext.Provider>
+          </>
         ) : (
           <div class="container-fluid bg-dark bg-gradient text-white">
             <Switch>
