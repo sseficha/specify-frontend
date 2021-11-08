@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Modal from "./Modal";
+import PlaylistModal from "./PlaylistModal";
 import "../../style/recommendation.scss";
 function RecommendationContainer({ recommendations }) {
   const [currentSong, setCurrentSong] = useState();
@@ -89,7 +89,7 @@ function RecommendationContainer({ recommendations }) {
             </tbody>
           </table>
         )}
-        <Modal
+        <PlaylistModal
           uris={recommendations.map((recommendation) => recommendation.uri)}
         />
       </>

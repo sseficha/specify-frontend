@@ -116,6 +116,7 @@ function FormContainer({ setRecommendations }) {
             type="submit"
             value="Submit"
             onClick={handleSubmit}
+            style={{ position: "relative", zIndex: "1" }}
           ></input>
         </div>
       </div>

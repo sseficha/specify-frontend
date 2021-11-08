@@ -1,13 +1,16 @@
 import "bootstrap/dist/js/bootstrap.js";
-import { useRef, useContext } from "react";
+import { useRef, useContext, useEffect } from "react";
 import { AuthContext } from "../../context/AuthContext";
-import useHttpHook from "../../hooks/useHttpHook";
+import { HttpContext } from "../../context/HttpContext";
 
-function Modal({ uris }) {
+// import useHttpHook from "../../hooks/useHttpHook";
+
+function PlaylistModal({ uris }) {
   const inputText = useRef(null);
   const modal = useRef(null);
   const { accessToken } = useContext(AuthContext);
-  const { sendRequest, error, clearError } = useHttpHook();
+  // const { sendRequest, text } = useHttpHook();
+  const { sendRequest, setNotification } = useContext(HttpContext);
 
   const handeClick = () => {
     const createPlaylist = async () => {
@@ -24,7 +27,6 @@ function Modal({ uris }) {
         modal.current.click(); //close modal
 
         console.log(responseData);
-        //popover with successfully created :)
       } catch (error) {
         console.log(error);
       }
@@ -79,4 +81,4 @@ function Modal({ uris }) {
   );
 }
 
-export default Modal;
+export default PlaylistModal;
